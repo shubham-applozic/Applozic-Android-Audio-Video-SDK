@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:showIn="@layout/applozic_audio_call">
+
+    <com.twilio.video.VideoView
+        android:id="@+id/thumbnail_video_view"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        app:tviMirror="true"
+        app:tviOverlaySurface="true" />
+
+    <com.twilio.video.VideoView
+        android:id="@+id/primary_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/video_status_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textDirection="locale"
+            android:textAlignment="gravity"
+            android:text="Room Status"
+            android:textColor="@color/alphabet_g"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
