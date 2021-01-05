@@ -68,12 +68,18 @@ android {
         exclude 'META-INF/*.SF'
         exclude 'META-INF/*.DSA'
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     //Note: use this for customization
     api project(':mobicomkitui')
+    api project(':audiovideo')
     //api 'com.applozic.communication.uiwidget:mobicomkitui:5.93'
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.multidex:multidex:2.0.1'
