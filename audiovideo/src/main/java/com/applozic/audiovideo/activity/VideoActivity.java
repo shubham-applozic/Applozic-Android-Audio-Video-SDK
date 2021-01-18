@@ -47,7 +47,9 @@ public class VideoActivity extends AudioCallActivityV2 {
         thumbnailVideoView = (VideoView) findViewById(R.id.thumbnail_video_view);
 
         videoStatusTextView = (TextView) findViewById(R.id.video_status_textview);
-        videoStatusTextView.setVisibility(View.GONE);
+        if(!incomingCall) {
+            setVideoCallStatusText(getString(R.string.status_text_calling));
+        }
 
         connectActionFab = (FloatingActionButton) findViewById(R.id.call_action_fab);
         switchCameraActionFab = (FloatingActionButton) findViewById(R.id.switch_camera_action_fab);
