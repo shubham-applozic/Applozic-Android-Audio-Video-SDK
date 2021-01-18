@@ -38,7 +38,10 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     testApi 'junit:junit:4.12'
     implementation "com.twilio:video-android:5.13.0"
-    api project(':mobicomkitui')
+    //release
+    //api project(':mobicomkitui')
+    //development
+    implementation 'com.github.AppLozic.Applozic-Android-SDK:mobicomkitui:5.96.1'
 }
 /*
 
