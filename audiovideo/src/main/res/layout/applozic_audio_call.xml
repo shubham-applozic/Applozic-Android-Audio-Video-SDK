@@ -106,4 +106,17 @@
         android:textColor="@color/whitesmoke"
         android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/applozic_audio_status"
+        android:layout_width="wrap_content"
+        android:textDirection="locale"
+        android:textAlignment="gravity"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applozic_audio_timer"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="@dimen/fab_margin"
+        android:textColor="@color/whitesmoke"
+        android:textSize="20sp" />
+
 </RelativeLayout>

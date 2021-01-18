@@ -25,9 +25,9 @@
 
     <LinearLayout
         android:id="@+id/status"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="center"
         android:orientation="vertical">
 
         <TextView
@@ -37,8 +37,7 @@
             android:layout_gravity="center"
             android:textDirection="locale"
             android:textAlignment="gravity"
-            android:text="Room Status"
-            android:textColor="@color/alphabet_g"
+            android:textColor="@color/white"
             android:textSize="20sp" />
 
     </LinearLayout>
